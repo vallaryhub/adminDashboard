@@ -48,7 +48,7 @@
     
     $updateStudent=mysqli_query($Conn,"UPDATE enrollments SET name='$name', reg_number='$regNumber',phone='$phone',
     email='$email', course='$course' WHERE id='" .$_GET['id']."'");
-
+// check if data is inserted
     if($updateStudent){
         echo 'data updated success';
     }
